@@ -19,3 +19,5 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
   2. Enable tracing of one process from another one (Pin requirement when OS configuration prevents injection mode). ==> Use command mentioned below in Ubuntu machine
   > **echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope**
+
+***How do I use it?***
