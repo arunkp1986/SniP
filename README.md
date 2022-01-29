@@ -36,3 +36,11 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
       2.3 **PIN_PATH:** Path to the pin binary file. For your reference, we have placed the tarball Pin on the root of this SniP. Please untar it on the same location or at your convineint location. But do not forgot to modify the this PATH.
 
       2.4 **PIN_TOOL:** This holds the path of your Pin tool .so file which you have created. We are also providing a Pin tool you your are using our provided pin tarball. On ontaring it, you can find pin tool at location **'pin-3.20-98437-gf02b61307-gcc-linux/source/tools/MyPinTool'**. You required to generate .so binary by invoking **make** command.
+
+      2.5 **BENCH_PATH:** Path to your benchmark or program you want to trace. We are providing and example benchmark program inside is example folder of SniP project. To use it, jume generate its binary file by executing following command after going inside the example folder.
+          > **gcc -o pthread_merge_sort pthread_merge_sort.c -lpthread**
+
+      2.6 **BENCH_NAME:** Provide the name of benchmark. In our example benchmark case, set it to **pthread_merge_sort**.
+
+      2.7 **BENCH_ARGS:** If your benchmark program required some command line arhuments, ples add them in the form of space separated single string. If bechmark program does not need any argument. Set is bith empty string, which is the case with our supplied example bechmark program.
+      
