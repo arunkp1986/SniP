@@ -29,7 +29,7 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
   **2.** Update the required paths and settings in benchmark_run.h file available in driver_program folder. The description of all the parameter/settings presents in benchmark.h file as #define are as follows:
 
-      2.1 STACK_TRACE: Set to 1 if you want to trace only the stack area otherwise 0
+      **2.1 STACK_TRACE:** Set to 1 if you want to trace only the stack area otherwise 0
 
       2.2 MULTI: Set to 1 if your benchmark or program which you want to trace is multi-threded else 0.
 
