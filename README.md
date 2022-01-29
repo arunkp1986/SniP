@@ -46,4 +46,5 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
   3. Generate the driver program binary. To generate it, first go inside the driver_program folder, use run the make command as follows:
       > **cd driver_program**
+      
       > **make**
