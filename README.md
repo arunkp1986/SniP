@@ -29,10 +29,10 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
   2. Update the required paths and settings in benchmark_run.h file available in driver_program folder. The description of all the parameter/settings presents in benchmark.h file as #define are as follows:
 
-  2.1 STACK_TRACE: Set to 1 if you want to trace only the stack area otherwise 0
+      2.1 STACK_TRACE: Set to 1 if you want to trace only the stack area otherwise 0
 
-  2.2 MULTI: Set to 1 if your benchmark or program which you want to trace is multi-threded else 0.
+      2.2 MULTI: Set to 1 if your benchmark or program which you want to trace is multi-threded else 0.
 
-  2.3 PIN_PATH: Path to the pin binary file. For your reference, we have placed the tarball Pin on the root of this SniP. Please untar it on the same location or at your convineint location. But do not forgot to modify the this PATH.
+      2.3 PIN_PATH: Path to the pin binary file. For your reference, we have placed the tarball Pin on the root of this SniP. Please untar it on the same location or at your convineint location. But do not forgot to modify the this PATH.
 
-  2.4 PIN_TOOL: This holds the path of your Pin tool .so file which you have created. We are also providing a Pin tool you your are using our provided pin tarball. On ontaring it, you can find pin tool at location **'pin-3.20-98437-gf02b61307-gcc-linux/source/tools/MyPinTool'**. You required to generate .so binary by invoking **make** command.
+      2.4 PIN_TOOL: This holds the path of your Pin tool .so file which you have created. We are also providing a Pin tool you your are using our provided pin tarball. On ontaring it, you can find pin tool at location **'pin-3.20-98437-gf02b61307-gcc-linux/source/tools/MyPinTool'**. You required to generate .so binary by invoking **make** command.
