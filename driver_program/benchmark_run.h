@@ -13,8 +13,8 @@
 #endif
 
 
-#define BENCH_PATH "/usr/bin/python3.8"
-#define BENCH_NAME "python3.8"
+#define BENCH_PATH "/usr/bin/python3"
+#define BENCH_NAME "python3"
 #define BENCH_ARG1 "-m"
 #define BENCH_ARG2 "http.server"
 

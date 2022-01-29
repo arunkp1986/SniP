@@ -10,7 +10,7 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
 ## What package/platform dependencies do I need to have to run the code?
 
-  This code is tested on a Linux machine with Linux kernel version 4.19.
+  This code is tested on a Ubuntu 20.04 machine with Linux kernel version 4.19 and g++ version 9.3.
 
   Following system settings need a modification whenever a system seeks reboot/restart.
 
@@ -21,3 +21,7 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
   > **echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope**
 
 ## How do I use it?
+
+  Following steps shows the usage of SniP
+
+  1. Insert monitoring kernel module available in monitor_module.
