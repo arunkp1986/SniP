@@ -13,9 +13,8 @@
 #endif
 
 
-#define BENCH_PATH "/usr/bin/python3"
-#define BENCH_NAME "python3"
-#define BENCH_ARG1 "-m"
-#define BENCH_ARG2 "http.server"
+#define BENCH_PATH "../example/pthread_merge_sort"
+#define BENCH_NAME "pthread_merge_sort"
+#define BENCH_ARGS ""
 
 #endif
