@@ -14,20 +14,20 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
   Following system settings need a modification whenever a system seeks reboot/restart.
 
-  1. Disable systems ASLR ==> Use command mentioned below
+  **1.** Disable systems ASLR ==> Use command mentioned below
   > **echo 0 | sudo tee /proc/sys/kernel/randomize_va_space**
 
-  2. Enable tracing of one process from another one (Pin requirement when OS configuration prevents injection mode). ==> Use command mentioned
+  **2.** Enable tracing of one process from another one (Pin requirement when OS configuration prevents injection mode). ==> Use command mentioned
   > **echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope**
 
 ## How do I use it?
 
   Following steps shows the usage of SniP
 
-  1. Insert monitoring kernel module available in monitor_module. ==> ==> Use command mentioned
+  **1.** Insert monitoring kernel module available in monitor_module. ==> ==> Use command mentioned
   > **sudo insmode monitor_module/stackmonitor.ko
 
-  2. Update the required paths and settings in benchmark_run.h file available in driver_program folder. The description of all the parameter/settings presents in benchmark.h file as #define are as follows:
+  **2.** Update the required paths and settings in benchmark_run.h file available in driver_program folder. The description of all the parameter/settings presents in benchmark.h file as #define are as follows:
 
       2.1 STACK_TRACE: Set to 1 if you want to trace only the stack area otherwise 0
 
