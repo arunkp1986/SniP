@@ -58,4 +58,4 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
   4. Execute the benchmar_run binary to get the trace of your benchmark program as follows from the inside of driver_program folder:
       > **./benchmark_run**
 
-  On Successfull execution of driver program, you will get trace file **pinatrace.out** as provided inside our Pin tool. This file name may differe on the basis of your supplied output file name in the Pin tool. You can also use **dmesg** to see the stack ranges indentified by the monitor module.
+  On Successfull execution of driver program, you will get trace file **pinatrace.out** as provided inside our Pin tool. This file name may differ on the basis of your supplied output file name in the Pin tool. You can also use **dmesg** to see the stack ranges indentified by the monitor module.
