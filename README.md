@@ -44,7 +44,7 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
       2.6 **BENCH_NAME:** Provide the name of benchmark. In our example benchmark case, set it to **pthread_merge_sort**.
 
-      2.7 **BENCH_ARGS:** If your benchmark program requires some command line arguments, please add them in the form of space separated single string. If bechmark program does not need any argument, you may set it with empty string.
+      2.7 **BENCH_ARGS:** If your benchmark program requires some command line arguments, please add them in the form of space separated single string. If bechmark program does not need any argument, you may set it with empty string. **pthread_merge_sort** does not take any arguments.
       
       You may refer to man page of **execlp** in Linux to gain more information on **BENCH PATH, NAME, ARGS** arguments.
 
