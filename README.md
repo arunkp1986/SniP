@@ -43,4 +43,7 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
       2.6 **BENCH_NAME:** Provide the name of benchmark. In our example benchmark case, set it to **pthread_merge_sort**.
 
       2.7 **BENCH_ARGS:** If your benchmark program required some command line arhuments, ples add them in the form of space separated single string. If bechmark program does not need any argument. Set is bith empty string, which is the case with our supplied example bechmark program.
-      
+
+  3. Generate the driver program binary. To generate it, first go inside the driver_program folder, use run the make command as follows:
+      > **cd driver_program**
+      > **make**
