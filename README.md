@@ -26,6 +26,7 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
   1. Insert monitoring kernel module available in monitor_module.==> Use command mentioned
       > **sudo insmode monitor_module/stackmonitor.ko
+      If you are facing any difficulty to insert stackmonitor.ko, please rm stackmonitor.ko and run make inside monitor_module then try to insert
 
   2. Update the required paths and settings in **benchmark_run.h** file available in **driver_program** folder. The description of all the parameter/settings presents in benchmark_run.h file as #define are as follows:
 
