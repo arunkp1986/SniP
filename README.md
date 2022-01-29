@@ -39,7 +39,7 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
       2.5 **BENCH_PATH:** Path to your benchmark or program you want to trace. We are providing and example benchmark program inside is example folder of SniP project. To use it, jume generate its binary file by executing following command after going inside the example folder.
       > **cd example**
-      
+
       > **gcc -o pthread_merge_sort pthread_merge_sort.c -lpthread**
 
       2.6 **BENCH_NAME:** Provide the name of benchmark. In our example benchmark case, set it to **pthread_merge_sort**.
@@ -50,3 +50,8 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
       > **cd driver_program**
 
       > **make**
+
+  4. Execute the benchmar_run binary to get the trace of your benchmark program as follows from the inside of driver_program folder:
+      > **./benchmark_run**
+
+  On Successfull exectuin of driver program, you will get trace file **pinatrace.out** as provided inside our Pin tool. This file name may differe on the besis of your suppliead output file inside the Pin tool.
