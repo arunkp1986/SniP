@@ -24,6 +24,6 @@ uninstall:
 	rm $(TARGET_PATH)/$(BINARY).ko
 	depmod -a
 
-#clean:
-	#make -C $(KERNEL) M=$(KMOD_DIR) clean
+clean:
+	make -C $(KERNEL) M=$(KMOD_DIR) clean
 
