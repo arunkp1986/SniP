@@ -26,10 +26,10 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
   1. Insert monitoring kernel module available in monitor_module.==> Use command mentioned,
 
-      Note: If you are facing any difficulty to insert **stackmonitor.ko**, please **rm stackmonitor.ko** and **run make clean** and **run make** inside **monitor_module** folder and try to insert
+      Note: If you are facing any difficulty to insert **stackmonitor.ko**, please **rm stackmonitor.ko** and **run make clean** and **run make** inside **monitor_module** folder and try to insert. Make sure to change **NUM_THREADS** in **char_dev.c** according to number of threads the benchmark creates, by default it is set to 64.
       > **sudo insmode monitor_module/stackmonitor.ko
 
-  2. Update the required paths and settings in **benchmark_run.h** file available in **driver_program** folder. The description of all the parameter/settings presents in benchmark_run.h file as #define are as follows:
+  3. Update the required paths and settings in **benchmark_run.h** file available in **driver_program** folder. The description of all the parameter/settings presents in benchmark_run.h file as #define are as follows:
 
       2.1 **STACK_TRACE:** Set to 1 if you want to perform targetted trace of stack area, otherwise set to 0
 
@@ -37,7 +37,7 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
 
       2.3 **PIN_PATH:** Path to the pin binary file. For your reference, we have placed the tarball of Intel's Pin in the SniP root directory. Please untar it on the same location or at your convenient location. But do not forgot to modify the **PIN_PATH** accordingly.
 
-      2.4 **PIN_TOOL:** This holds the path of your Pin tool **.so** file which you have created. We are also providing the pin tool (**multireadwrite.cpp**) that we have used in pin tarball. On untaring it, you can find pin tool at location **'pin-3.20-98437-gf02b61307-gcc-linux/source/tools/MyPinTool'**. You required to generate **.so** binary by invoking **make** command.
+      2.4 **PIN_TOOL:** This holds the path of your Pin tool **.so** file which you have created. We are also providing the pin tool (**multireadwrite.cpp**) that we have used in pin tarball. On untaring it, you can find pin tool at location **'pin-3.20-98437-gf02b61307-gcc-linux/source/tools/MyPinTool'**. You required to generate **.so** binary by invoking **make** command. Make sure to change **NUM_THREADS** in **multireadwrite.cpp** according to number of threads the benchmark creates, by default it is set to 64.
 
       2.5 **BENCH_PATH:** Path to your benchmark or program that you want to trace. We are providing an example benchmark program inside **example** folder in the SniP root directory. To use it, just generate its binary file by executing following command after going inside the example folder.
       > **cd example**
@@ -50,12 +50,12 @@ SniP: An Efficient Stack Tracing Framework for Multi-threaded Programs
       
       You may refer to man page of **execlp** in Linux to gain more information on **BENCH PATH, NAME, ARGS** arguments.
 
-  3. Generate the driver program binary. To generate it, first go inside the **driver_program** folder, use make command as follows:
+  4. Generate the driver program binary. To generate it, first go inside the **driver_program** folder, use make command as follows:
       > **cd driver_program**
 
       > **make**
 
-  4. Execute the benchmar_run binary to get the trace of your benchmark program as follows from the inside of driver_program folder:
+  5. Execute the benchmar_run binary to get the trace of your benchmark program as follows from the inside of driver_program folder:
       > **./benchmark_run**
 
   On Successfull execution of driver program, you will get trace file **pinatrace.out** as provided inside our Pin tool. This file name may differ on the basis of your supplied output file name in the Pin tool. You can also use **dmesg** to see the stack ranges indentified by the monitor module.
